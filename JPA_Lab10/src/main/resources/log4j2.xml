@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Appenders>
+        <!-- Console appender configuration -->
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} [%tn-%tid] %-5p %c:%L - %m%n" />
+        </Console>
+    </Appenders>
+
+    <Loggers>
+<!--        <Logger name="be.cocoding" level="debug" />-->
+<!--        <Logger name="org.springframework" level="debug" />-->
+        <Logger name="org.springframework.orm.jpa" level="debug" />
+<!--        <Logger name="org.hibernate" level="debug" />-->
+         <Logger name="org.hibernate.SQL" level="debug" />
+
+        <Root level="info">
+            <AppenderRef ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>
