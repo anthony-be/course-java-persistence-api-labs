@@ -6,19 +6,19 @@ import java.util.Objects;
 
 public class CustomerReportDto {
 
-    private final Integer nbrOfCustomer;
+    private final Long nbrOfCustomer;
 
     private final Double passwordAverageLength;
-    private final Double passwordMinimumLength;
-    private final Double passwordMaximumLength;
+    private final Integer passwordMinimumLength;
+    private final Integer passwordMaximumLength;
 
     private final Double customerAverageAge;
-    private final Double customerYoungestAge;
-    private final Double customerOldestAge;
+    private final Integer customerYoungestAge;
+    private final Integer customerOldestAge;
 
-    public CustomerReportDto(Integer nbrOfCustomer,
-                             Double passwordAverageLength, Double passwordMinimumLength, Double passwordMaximumLength,
-                             Double customerAverageAge, Double customerYoungestAge, Double customerOldestAge) {
+    public CustomerReportDto(Long nbrOfCustomer,
+                             Double passwordAverageLength, Integer passwordMinimumLength, Integer passwordMaximumLength,
+                             Double customerAverageAge, Integer customerYoungestAge, Integer customerOldestAge) {
         this.nbrOfCustomer = nbrOfCustomer;
         this.passwordAverageLength = passwordAverageLength;
         this.passwordMinimumLength = passwordMinimumLength;
@@ -28,7 +28,7 @@ public class CustomerReportDto {
         this.customerOldestAge = customerOldestAge;
     }
 
-    public Integer getNbrOfCustomer() {
+    public Long getNbrOfCustomer() {
         return nbrOfCustomer;
     }
 
@@ -36,11 +36,11 @@ public class CustomerReportDto {
         return passwordAverageLength;
     }
 
-    public Double getPasswordMinimumLength() {
+    public Integer getPasswordMinimumLength() {
         return passwordMinimumLength;
     }
 
-    public Double getPasswordMaximumLength() {
+    public Integer getPasswordMaximumLength() {
         return passwordMaximumLength;
     }
 
@@ -48,11 +48,11 @@ public class CustomerReportDto {
         return customerAverageAge;
     }
 
-    public Double getCustomerYoungestAge() {
+    public Integer getCustomerYoungestAge() {
         return customerYoungestAge;
     }
 
-    public Double getCustomerOldestAge() {
+    public Integer getCustomerOldestAge() {
         return customerOldestAge;
     }
 
